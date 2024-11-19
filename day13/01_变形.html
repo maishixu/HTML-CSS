@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>变形</title>
+  <style>
+    .box1{
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    /*  transform 设置变形
+        变形本身不会影响其他元素 占着原来的位置
+
+    */
+      position: absolute;
+      top:50%;
+      left:50%;
+      /*一种居中方式*/
+      transform: translateX(-50%) translateY(-50%);
+      /*沿着X轴平移*/
+      /*沿着Y轴平移*/
+    }
+  </style>
+</head>
+
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

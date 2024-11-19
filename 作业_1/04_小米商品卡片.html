@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商品卡片</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+background-color: #333;
+            font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        /*设置外层样式*/
+        .card {
+            box-sizing: border-box;
+            width: 234px;
+            height: 300px;
+            padding: 20px 0;
+            background-color: #fff;
+            text-align: center;/*文字居中*/
+margin: 100px auto;
+        }
+        /*设置图片容器*/
+        .img-rapped{
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;/*容器内图片居中*/
+        }
+        .img-rapped img{
+            vertical-align: top;
+            width: 100%;
+        }
+        .card h3{
+            font-size: 14px;
+            color:#333;
+            font-weight: normal;
+            margin-top: 18px;
+        }
+
+        .card .desc{
+            font-size: 12px;
+            margin-top: 2px;
+            margin-bottom: 10px;
+            color:#b0b0b0;
+        }
+
+        .price span{
+            color:#ff6700;
+            font-size:14px;
+        }
+        .price del{
+            color:#b0b0b0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<!--外层容器-->
+<a href="https://www.mi.com/shop/buy?product_id=19715">
+    <div class="card">
+
+        <div class="img-rapped">
+    <!--        非块元素建议套一个块元素方便布局-->
+            <img src="./img_11.png">
+        </div>
+        <h3>Redmi book pro 14 2024</h3>
+        <p class="desc">满血性能 全新酷睿</p>
+        <div class="price">
+            <span>4999</span>
+            <del>5299</del>
+        </div>
+    </div>
+</a>
+</body>
+</html>

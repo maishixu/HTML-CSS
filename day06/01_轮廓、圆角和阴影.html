@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>补充样式</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+
+            /*border-top-left-radius:10px;!*左上角圆角的半径*!*/
+            /*border-top-right-radius:10px;*/
+            /*border-bottom-right-radius: 10px;*/
+            /*border-radius:10px;*/
+            /*左上角圆角的半径*/
+            /*border:10px red solid;*/
+            /*可以为元素指定阴影*/
+
+            /*x轴偏移量 y轴偏移量 模糊半径 扩散半径（可以省略） 阴影颜色*/
+            /*inset表示内部阴影*/
+            box-shadow:10px 20px 10px  rgba(0, 0, 0, 0.36);/*不会影响元素大小*/
+
+            /*outline:10px red solid ;!*轮廓线 但不会影响元素的可见框大小*!*/
+        }
+        .box1:hover{
+            /*outline:10px red solid;*/
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

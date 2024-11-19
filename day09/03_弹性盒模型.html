@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒子模型</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style: none;
+        }
+        /*---------设置样式👇----------*/
+        ul{
+            display:flex;/*只添加这一句就可以使元素横向排列*/
+            flex-direction: row;
+            flex-wrap:wrap;
+            /*设置元素在主轴上的对齐方式justify-content
+                start:靠主轴起始位置对齐
+                end:靠主轴的结束位置对齐
+                center:沿主轴方向居中对齐
+                space-between:均匀分布
+                space-around：将主轴空白位置分配到元素周围
+                space-evenly：空白均匀分布在夹缝间
+              设置元素在侧轴上的对齐方式align-items
+                可选项和主轴上的对齐方式差不多
+                stretch:拉伸布满侧轴空白位置
+              设置侧轴的空白空间分配
+            */
+            justify-content: space-evenly;
+            align-items: center;
+            /*flow-flow:row wrap简写属性*/
+            width:150px;
+            height: 500px;
+            border:2px solid rgba(0, 0, 0, 0.76);
+            /*display:flow-root;!*处理高度塌陷*!*/
+        }
+
+        li{
+
+            flex-shrink: 0;/*不伸缩*/
+            width: 50px;
+            height: 50px;
+            /*设置文字的样式*/
+            text-align:center;
+            line-height: 50px;
+            font-size:20px;
+            color:#fff;
+
+            /*float:left;*/
+        }
+        li:nth-child(1){
+            background-color: #ffb83d;
+        }
+        li:nth-child(2){
+             background-color: #8a6464;
+         }
+        li:nth-child(3){
+            background-color: #ff399e;
+        }
+        li:nth-child(4){
+            background-color: #00c4ff;
+        }
+        li:nth-child(5){
+            background-color: #6aff14;
+        }
+    </style>
+</head>
+<!--
+    CSS3新添加的布局方式
+        -横向 纵向
+        -根据网页按比例缩放
+    弹性容器
+        -对谁用弹性盒 把谁设置成弹性容器
+        -display：flex块级弹性容器
+        -display：inline-flex行内弹性容器
+    弹性子元素
+        -当给ul（父）设置为弹性容器时 其他的li（子）也会成为弹性子元素
+        -注意！！子元素才可以变成弹性子元素
+        -这个例子中div不是弹性子元素
+    弹性子元素的特点
+        -主轴：弹性子元素的排列方向
+                设置主轴的方向：flex-direction
+                       可选值：row 水平
+                              column 垂直
+                              row-reverse 从右往左水平
+                              column-reverse 自下向上垂直
+        -侧轴：与主轴垂直
+        -换行：flex-wrap
+            可选项
+                ·wrap换行
+                ·nowrap不换行
+                ·wrap-reverse反向换行
+
+-->
+<body>
+<ul>
+    <li>1
+        <div></div>
+        <div></div>
+    </li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>

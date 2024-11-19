@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 187, 255, 0.8);
+
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 213, 0, 0.7);
+            position:fixed;
+            /*left:0;*/
+            /*top:0;*/
+            bottom:0;
+            right:0;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(135, 222, 163, 0.8);
+
+        }
+
+    </style>
+</head>
+<!--
+    固定定位属于一种绝对定位
+        ·不同点：固定定位总参照于浏览器的窗口定位 不会随网页滚动
+        ·广告 “回到顶部” 等专用
+-->
+<body>
+
+</body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+
+</html>

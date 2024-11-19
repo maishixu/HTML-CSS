@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类</title>
+
+    <style>
+
+      a:visited{color: darkmagenta;}
+      a:link{color: blue}
+      a:hover{color: darkred}
+      a:active{color: black}
+      .box1{
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+        border:2px solid red;
+      }
+      div:empty{background: #87dea3}
+
+      /*li:first-child{color: red}*/
+      /*li:first-of-type{color:tomato}*/
+      /*li:nth-child(2){color: red}*/
+      /*li:nth-of-type(2){color: blue}*/
+      li:not(:nth-child(3)){color: red}
+    </style>
+</head>
+
+
+<body>
+<span>你错了，我才是</span>
+<li>我是body父亲的第一个孩子li</li>
+
+
+  <!--
+      伪类：用于表示元素的状态
+      a的伪类： 语法 a：**
+        :link 正常的超链接
+        :visited 访问过的超链接
+        :hover 移上去字体变色（也可以给别的元素设置）
+        :active 鼠标点击时的颜色（也通用）
+        :empty 空元素
+
+        first-child某个父亲的第一个子元素
+        first-of-child同类型中的第一个子元素
+        last-child某个父亲的最后一个子元素
+        last-of-child同一个类型中的最后一个子元素
+        nth-child(x)第x个子元素 n+2从第二个开始 2n表偶数位
+        nth-of-type（n）同类型的第n个子元素
+        nth-last-child(n)倒数第n个子元素
+        nth-last-of-type（n）同类型中倒数第n个子元素
+        only-child不能有兄弟元素的子元素
+        only-of-type同类型中唯一的子元素
+
+        even偶数=2n  odd奇数=2n+1
+        not 否定伪类
+  -->
+<a href="https://lilichao.com">超链接（访问过）</a>
+<a href="https://lilichao111.con">超链接</a>
+<hr>
+<a>移上来字体变色</a>
+
+<!--练习快捷键-->
+<div class="box1">box1</div>
+  <div class="box1"></div>
+<ul>
+  <li>第一个</li>
+  <li>第二个</li>
+  <li>第三个</li>
+</ul>
+
+
+
+</body>
+</html>

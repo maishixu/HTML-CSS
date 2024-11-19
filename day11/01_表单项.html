@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form action="../day10/target.html">
+<!--
+  input 是替换属性 呈现的形式是行内块 不会独占一行 br换行也可通过套一个div换行
+  表单中的信息通过url发送 ？号后的内容被称为查询字符串（一个一个的名值对）
+    发送给服务器后 服务器会根据数据名来获取对用的值
+    disabled禁用表单项 无法提交
+ -->
+  用户名<input type="text" name="user" placeholder="请输入用户名">
+  密码<input type="password" name="password">
+<!--  单选框radio 通过name属性来分组 通过value的值发送给服务器
+      多选框checkbox
+      ·checked默认选中单选框属性
+      ·selected默认显示的多选框下拉项
+-->
+
+  性别:
+  男<input type="radio" name="gender" value="男" checked>
+  女<input type="radio" name="gender" value="女">
+  爱好：
+  羽毛球<input type="checkbox" value="1">
+  乒乓球<input type="checkbox" value="2">
+  足球球<input type="checkbox" value="3">
+<!--下拉列表
+  -  select
+      multiple多选下拉列表
+
+-->
+  编程语言
+  <select name="language" multiple>
+    <option>java</option>
+    <option>python</option>
+    <option>C++</option>
+  </select>
+  <input type="submit" value="提交">
+  <input type="reset" value="重置">
+<!--  普通按钮 可以通过JavaScript为其添加功能-->
+  <input type="button" value="普通按钮">
+
+
+</form>
+</body>
+</html>

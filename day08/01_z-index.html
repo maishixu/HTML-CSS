@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+      .box1{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(0, 187, 255, 0.8);
+        position:absolute;
+        z-index:2;
+      }
+      .box2{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 213, 0, 0.7);
+        position:absolute;
+        top:30px;
+        left:30px;
+        z-index:1;
+      }
+      .box3{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(135, 222, 163, 0.8);
+        position:absolute;
+        top:60px;
+        left:60px;
+        z-index:3;
+      }
+      .box4{
+        width: 50px;
+        height: 50px;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        background-color: lightcoral;
+      }
+      .box5{
+        width: 200px;
+        height: 200px;
+        background-color: #e32e2e;
+        /*开启定位的元素层级高，所以会盖住box5*/
+      }
+
+    </style>
+</head>
+<body>
+<!--
+  相对定位在文档流占地方
+  绝对定位不占地方 脱离文档流
+  z-index可以设置元素层级
+  z-index越大 元素层级越高 越优先显示
+    ·若层级一样 优先显示下边的元素
+    ·后代会继承祖先的层级
+    ·但祖先的层级盖不住后代
+    ·设置负值定位元素会被文档流的元素覆盖
+-->
+</body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3">
+  <div class="box4"></div>
+</div>
+<div class="box5"></div>
+</html>

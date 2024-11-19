@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+  <meta charset="UTF-8">
+  <title>弹性盒子模型</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    ul{
+      list-style: none;
+    }
+    /*---------设置样式👇----------*/
+    ul{
+      display:flex;/*只添加这一句就可以使元素横向排列*/
+      flex-direction: row;
+      width:400px;
+      height:400px;
+      border:2px solid rgba(0, 0, 0, 0.76);
+      align-items: start;
+    }
+
+    /*align-self 单独设置某个子元素的位置 沿侧轴*/
+    /*order指定弹性子元素的顺序 值越小越靠前*/
+    li{
+      /*弹性项*/
+
+      text-align:center;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size:20px;
+      color:#fff;
+    }
+    li:nth-child(1){
+      align-self: end;
+      background-color: #ffb83d;
+      order:3;
+    }
+    li:nth-child(2){
+      background-color: #8a6464;
+      order:1;
+    }
+    li:nth-child(3){
+      background-color: #ff399e;
+      order:2
+    }
+    li:nth-child(4){
+      background-color: #00c4ff;
+      order:5;
+    }
+    li:nth-child(5){
+      background-color: #6aff14;
+      order:4;
+    }
+  </style>
+</head>
+<!--
+
+-->
+<body>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+</ul>
+</body>
+</html>

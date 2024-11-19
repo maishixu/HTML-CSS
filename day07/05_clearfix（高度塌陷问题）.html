@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            border:10px red solid;
+            /*display:flow-root;!*解决高度塌陷*!*/
+        }
+        .box2{
+            float:left;/*脱离文档流，导致box1高度塌陷*/
+            width: 100px;
+            height: 100px;
+            background-color: #de87a5;
+        }
+        .clearfix::after{
+            display: block;
+            content: "";
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+<div class="box1 clearfix">
+    <div class="box2">
+
+    </div>
+</div>
+</body>
+</html>

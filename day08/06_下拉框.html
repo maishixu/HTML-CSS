@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉框</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+
+      }
+      .outer{
+        font-size:20px;
+        margin-top: 100px;
+        margin-left:100px;
+        position:relative;
+      }
+      .title{
+        width:120px;
+        background-color: #87ded7;
+        border:red solid 2px;
+      }
+      .content{
+        display:none;/*消失的同时不占据位置*/
+        width: 200px;
+        height: 200px;
+        background-color: #00c4ff;
+        border:red solid 2px;
+        position:absolute;
+      }
+      .outer:hover .content{
+        display: block;
+      }
+    </style>
+</head>
+<!--
+作业：
+京东下拉框
+京东特价
+-->
+<body>
+<div class="outer">
+  <div class="title">
+    下拉款的标题
+  </div>
+  <div class="content">
+    下拉框的内容
+  </div>
+</div>
+</body>
+</html>

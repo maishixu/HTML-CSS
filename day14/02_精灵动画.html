@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵动画</title>
+  <style>
+    .box1{
+      height: 271px;
+      width: 132px;
+      background-image:url("./mitu.png");
+      animation: move 0.8s steps(4) infinite;
+    }
+    @keyframes move {
+      from{
+        background-position: 0 0;
+      }
+      to{
+        background-position: -534px 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

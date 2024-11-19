@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+  <meta charset="UTF-8">
+  <title>百度</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <style>
+  .baidu{
+    width: 1250px;
+    height: auto;
+  }
+  .quick-line{
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .left{
+    display: flex;
+    padding-left: 24px;
+    font-size: 13px;
+  }
+  .quick-line .left>a{
+    margin-right: 24px;
+
+  }
+  .quick-line .left>a:link{
+    color: #222;
+  }
+  .quick-line .left>a:hover{
+     color: rgb(76, 112, 251);
+   }
+  .right{
+    display: flex;
+    align-items: center;
+  }
+  .quick-line .right{
+    margin-right: 24px;
+  }
+  .quick-line .right>.set{
+    width: 26px;
+    font-size: 13px;
+  }
+  .quick-line .right>.set:hover{
+    cursor: pointer;
+    color:  rgb(76, 112, 251);
+  }
+  .quick-line .right>.log:hover{
+    cursor: pointer;
+    background-color: rgb(49, 94, 251);
+  }
+  .quick-line .right>.log{
+    /*width: 26px;*/
+    /*margin-top: 5px;*/
+    font-size: 13px;
+    line-height:24px;
+    text-align: center;
+    width: 47px;
+    height: 24px;
+    margin-left: 32px;
+    border-radius: 7px;
+    background-color: #4E6EEF;
+    color:#ffff;
+  }
+
+
+  /*设置logo*/
+  .logo-baidu{
+    display: flex;
+    font-size: 13px;
+    width: 1250px;
+    height: 128px;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-baidu .logo {
+    height: 75px;
+    width:auto;
+  }
+  .logo:hover{
+    cursor: pointer;
+  }
+  .logo:hover+.attention{
+    display: block;
+  }
+
+  .attention{
+    position:absolute;
+    height:26px;
+    width: 125px;
+    top:60px;
+    display: none;
+    border: black 1px solid;
+    line-height: 26px;
+    text-align: center;
+    /*align-items: center;*/
+  }
+
+
+  .search-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-line .search-line-left{
+    display: flex;
+    align-items: center;
+    position:relative;
+    border-top:rgb(196, 199, 206) 2px solid;
+    border-bottom:rgb(196, 199, 206) 2px solid;
+    border-left:rgb(196, 199, 206) 2px solid;
+    border-right:rgb(255, 255, 255) 2px solid;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    height: 44px;
+    width: 540px;
+    padding: 10px 10px 12px 1px;
+  }
+  .search-line .search-line-left>.mention{
+    display: none;
+    position:absolute;
+    top:45px;
+    right:1px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    height: 24px;
+    width: 80px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 6px;
+  }
+  .search-line .search-line-left>i:hover+.mention{
+    display: block;
+  }
+  .search-line .search-line-left>i{
+    font-size: 19px;
+    margin-top: 2px;
+    /*margin-left: 330px;*/
+  }
+  .search-line .search-line-left>.input-text{
+    /*height: 44px;*/
+    height:44px;
+    padding-left: 15px;
+    padding-right: 328px;
+  }
+  .search-line .search-line-right{
+    background-color: rgb(78, 110, 242);
+    color: #fff;
+    height: 44px;
+    width:100px ;
+    border-bottom-right-radius: 11px;
+    border-top-right-radius: 11px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 17px;
+  }
+  .search-line .search-line-right:hover{
+    cursor: pointer;
+    background-color: rgb(70, 98, 217);
+  }
+  .search-line .search-line-left>i:hover{
+    cursor: pointer;
+    color: #4E6EEF;
+  }
+  </style>
+</head>
+<body>
+<div class="baidu">
+
+  <div class="quick-line">
+    <div class="left">
+      <a href="#">新闻</a>
+      <a href="#">hao123</a>
+      <a href="#">地图</a>
+      <a href="#">贴吧</a>
+      <a href="#">视频</a>
+      <a href="#">图片</a>
+      <a href="#">网盘</a>
+      <a href="#">文库</a>
+      <a href="#">AI助手</a>
+      <a href="#">更多</a>
+    </div>
+    <div class="right">
+      <span class="set">设置</span>
+      <div class="log">登录</div>
+    </div>
+  </div>
+  <div class="logo-baidu">
+    <img src="img_14.png" alt="baidu" class="logo">
+    <div class="attention">点击一下 了解更多</div>
+  </div>
+  <div class="search-line">
+    <div class="search-line-left">
+      <input type="text" class="input-text">
+      <i class="fa-solid fa-camera"></i>
+      <div class="mention">按图片搜索</div>
+    </div>
+    <div class="search-line-right">百度一下</div>
+  </div>
+</div>
+</body>
+</html>

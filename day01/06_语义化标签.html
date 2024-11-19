@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>语义化标签</title>
+</head>
+<body>
+<!--
+网页除了给用户看 还给搜索引擎看
+语义化标签帮助程序是被这些标签
+header头部内容
+main  主要内容  一般只有一个
+footer底部标签
+article  表示一个独立的内容
+aside 侧边栏 和主题独立的内容
+nav 导航
+section 独立的区块
+
+通过语义化标签 为网页不同内容描述 方便爬虫识别页面
+实际开发中用div代替所有标签
+-->
+<nav class="crumbs">
+
+    <a href="#">青岛今日天气</a>
+</nav>
+
+<h1>Jump Bike 3000</h1>
+<p>
+  Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval
+  and adult forms.
+</p>
+
+<aside>
+  <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+</aside>
+
+<p>
+  Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the
+  Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and
+  other small creatures.
+</p>
+<article class="forecast">
+  <h1>Weather forecast for Seattle</h1>
+  <article class="day-forecast">
+    <h2>03 March 2018</h2>
+    <p>Rain.</p>
+  </article>
+  <article class="day-forecast">
+    <h2>04 March 2018</h2>
+    <p>Periods of rain.</p>
+  </article>
+  <article class="day-forecast">
+    <h2>05 March 2018</h2>
+    <p>Heavy rain.</p>
+  </article>
+</article>
+
+</body>
+</html>

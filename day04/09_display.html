@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+    <style>
+        span{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: #87dea3;
+        }
+        /*span:first-child{*/
+        /*    display: none;*/
+        /*}*/
+        span:first-child{
+            visibility: hidden;
+        }
+        /*span:nth-child(2){display: none}*/
+        /*span:first-child:hover+span{display: inline-block}*/
+    </style>
+</head>
+<!--
+    display可以用来设置元素的类型
+    inline-block行内块元素 但不独占一行
+    display:none 元素消失 不占位置
+    visibility:hidden 元素隐藏 占位置-->
+<body>
+<span>第一个span</span>
+<span>第二个span</span>
+</body>
+</html>

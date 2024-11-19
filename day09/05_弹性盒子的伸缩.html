@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒子模型</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style: none;
+        }
+        /*---------设置样式👇----------*/
+        ul{
+            display:flex;/*只添加这一句就可以使元素横向排列*/
+            flex-direction: row;
+            /*flex-wrap:wrap;*/
+            width:400px;
+            border:2px solid rgba(0, 0, 0, 0.76);
+            /*display:flow-root;!*处理高度塌陷*!*/
+        }
+        /*
+            弹性子元素的样式
+            flex-basis auto基于内容设置大小设置子元素的宽or高 决定于主轴是高还是宽
+            flex-shrink 收缩系数 可以分别给子元素设置1 2 3 4 5依次缩小越来越多
+            flex-grow 生长系数
+        */
+
+        li{
+            /*弹性项*/
+            flex-shrink: 1;/*收缩1不收缩0*/
+            flex-grow:1;
+            flex-basis: auto;
+            /*设置大小*/
+            /*width: 50px;*/
+            /*height: 50px;*/
+            /*设置文字的样式*/
+            text-align:center;
+            line-height: 50px;
+            font-size:20px;
+            color:#fff;
+
+            /*float:left;*/
+        }
+        li:nth-child(1){
+            background-color: #ffb83d;
+        }
+        li:nth-child(2){
+            background-color: #8a6464;
+        }
+        li:nth-child(3){
+            background-color: #ff399e;
+        }
+        li:nth-child(4){
+            background-color: #00c4ff;
+        }
+        li:nth-child(5){
+            background-color: #6aff14;
+        }
+    </style>
+</head>
+<!--
+
+-->
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #ffb83d;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: #00c4ff;
+            margin-top:20px ;
+        }
+        .clearfix::before{
+            content: "";
+            display: table;
+        }
+    </style>
+</head>
+<!--
+    clearfix总结 谁塌了 或者外边距折叠了 在标签中加一个clearfix即可
+    .clearfix::before,
+    .clearfix::after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+-->
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

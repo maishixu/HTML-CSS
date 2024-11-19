@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            /* height: 50px; */
+            margin: 50px auto;
+            padding: 10px 0;
+            width: 600px;
+            background-color: #f4f3f3;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 0;
+        }
+        .wrap span{
+            /* display: inline-block; */
+            padding: 6px 10px;
+            margin: 0 2px;
+            /* border: orange solid 1px; */
+            font-size: 16px;
+            border-radius: 18px;
+            vertical-align: middle;
+            /* background-color: white; */
+        }
+        .wrap .current{
+            background-color: pink;
+        }
+        .wrap span .icon1{
+            background-position: 0 0;
+            display: inline-block;
+            margin-right: 5px;
+            background-image: url(images/baby.png);
+            background-size: 100px 40px;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .wrap span .icon2{
+            display: inline-block;
+            margin-right: 5px;
+            background-image: url(images/baby.png);
+            background-size: 100px 40px;
+            background-position: -20px -21px;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .wrap span .icon3{
+
+            display: inline-block;
+            margin-right: 5px;
+            background-image: url(images/baby.png);
+            background-size: 100px 40px;
+            background-position: -40px 0;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .wrap span .icon4{
+
+            display: inline-block;
+            margin-right: 5px;
+            background-image: url(images/baby.png);
+            background-size: 100px 40px;
+            background-position: -60px 0;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        .wrap span .icon5{
+
+            display: inline-block;
+            margin-right: 5px;
+            background-image: url(images/baby.png);
+            background-size: 100px 40px;
+            background-position: -80px 0;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <span><i class="icon1"></i>备孕</span>
+        <span class="current"><i class="icon2"></i>怀孕</span>
+        <span><i class="icon3"></i>0-1岁</span>
+        <span><i class="icon4"></i>1-2岁</span>
+        <span><i class="icon5"></i>2-3岁</span>
+    </div>
+</body>
+</html>

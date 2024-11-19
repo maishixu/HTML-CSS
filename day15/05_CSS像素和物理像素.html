@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+<!--    设备的完美视口 device-width 确保网页在任何设备上都有完美视口-->
+    <title>像素</title>
+</head>
+<!--
+  像素-屏幕上一个个会发光的小点（红绿蓝三种颜色）
+    ·物理像素：发光小点
+    ·CSS像素：编写样式时使用的px
+    编写时使用CSS像素，呈现的是物理像素
+    默认情况下 CSS像素：物理像素=1：1
+    当放大屏幕时 CSS像素不变 呈现的物理像素改变 CSS和物理像素改变
+  移动端：物理像素越小 清晰度越高
+        手机的单个像素小于计算机的
+        （电脑像素1920 手机像素1200 但手机比电脑物理尺寸小得多 所有手机的单个像素远远小于电脑
+  带来的问题：电脑12px的字可能在手机上看不清了 因为手机的单个像素小
+  为了使pc端页面在移动端正常显示，移动端的浏览器会自动将视口宽度调整为980px（CSS像素）
+    ·视口：可见的窗口宽度
+    ·pc端窗口超过980 移动端浏览器会自动缩放 使页面能在移动端完整呈现
+
+    移动端的像素大小<pc端像素大小
+    移动端浏览器默认像素比
+    980:xxx
+    例如：iphone 12pro的最佳像素比是1比3 1个CSS像素对应3个物理像素
+    不同手机的完美视口不一样
+    设置 <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    ···适配问题:同样的项目大小那么在不同设备上不同完美视口他们的显示不全或过小
+    ···解决:不能用单位px 用新的单位vw（viewport-width） 100vw不论在哪个设备都撑满完美视口
+
+    1rem=1html的font-size
+    font-size（100vw/750）
+
+-->
+<body>
+
+</body>
+</html>

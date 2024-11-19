@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+  <meta charset="UTF-8">
+  <title>BFC</title>
+  <style>
+    .box1{
+      border:red 5px solid;
+      /*float:left;*/
+      /*overflow:auto;*/
+      display: flow-root;
+    }
+
+    .box2{
+      width: 100px;
+      height: 100px;
+      background-color: #87dea3;
+      float:left;
+    }
+    .box3{
+      width: 200px;
+      height: 200px;
+      background-color: #00c4ff;
+    }
+  </style>
+</head>
+<!--
+    BFC是隐含属性
+    开启BFC后：
+      1.子元素的垂直外边距不会传递给父元素
+      2.元素不会被浮动元素所覆盖
+      3.元素可以包含浮动的子元素
+    如何开启？
+      设置浮动
+      设置overflow：auto or hidden
+      display:flow-root（最好的方式 副作用最小）
+
+-->
+<body>
+<div class="box1">
+  <div class="box2"></div>
+</div>
+<div class="box3"></div>
+</body>
+</html>

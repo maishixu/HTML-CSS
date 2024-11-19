@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>定位总结</title>
+  <style>
+    .box1{
+      width: 300px;
+      height: 300px;
+      background-color: lightcoral;
+      position:relative;
+
+    }
+    .box2{
+      width: 200px;
+      height: 200px;
+      background-color: olivedrab;
+      /*position:relative;*/
+    }
+    .box3{
+      width: 100px;
+      height: 100px;
+      background-color: #ffb83d;
+      position:absolute;
+      left:10px;
+      bottom:10px;
+    }
+  </style>
+</head>
+<body>
+<!--
+ 相对定位
+  不脱离文档流 导致网页中某个部分被占着 所以很少用
+  定位：和元素原来的位置相对定位
+ 绝对定位(主要定位手段)
+  脱离文档流 就可以span设置宽高了 原来的位置就不再占用了 和原来位置没有关系了
+  且层级高 会盖住其他元素
+  定位：相对于包含块定位
+ 固定定位
+  脱离文档流
+  定位：总是参照于网页窗口。
+-->
+<div class="box1">
+  <div class="box2">
+    <div class="box3"></div>
+  </div>
+</div>
+</body>
+</html>

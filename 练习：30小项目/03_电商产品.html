@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商产品</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            display:block;
+            text-decoration: none;
+        }
+        .product{
+            width: 268px;
+            /* height: 500px; */
+            border: #ddd solid 1px;
+            margin: 50px auto 0;
+            text-align: center;
+        }
+        .product img{
+            width: 195px;
+            height: 190px;
+
+        }
+        .product .describe{
+            color: #835f3f;
+            font-size: 14px;
+        }
+        .product .product-detail{
+            box-sizing: border-box;
+            /* height: 100px; */
+            background-color: #f8f8f8;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .product .product-detail .text span:first-child{
+            display: inline-block;
+            width: 45px;
+            height: 17px;
+            line-height: 17px;
+            text-align: center;
+            color: white;
+            font-size: 11px;
+            background: linear-gradient(to right, rgb(13, 13, 224), rgb(242, 34, 242));
+            border-radius: 5px;
+        }
+        .product .product-detail .text span:nth-child(2){
+            display: inline-block;
+            padding: 0px 3px 0px;
+            font-size: 12px;
+            color: orangered;
+            border: rgb(228, 146, 114) solid 1px;
+            border-radius: 4px;
+        }
+        .product .product-detail .text span:nth-child(3){
+            display: inline-block;
+            padding: 0px 3px 0px;
+            font-size: 11px;
+            color:rgb(0, 135, 253);
+            border: rgb(4, 135, 249) solid 1px;
+            border-radius: 4px;
+        }
+        .product .product-detail .text span:nth-child(4){
+            display: inline-block;
+            padding: 0px 3px 0px;
+            font-size: 12px;
+            color:rgb(0, 135, 253);
+            border: rgb(4, 135, 249) solid 1px;
+            border-radius: 4px;
+        }
+        .product .product-detail .name{
+            color: black;
+            padding-top: 5px;
+            font-weight: 600;
+        }
+        .product .product-detail p:nth-child(3){
+            color: #cd660c;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<!-- 
+    a标签是行内元素
+    p标签的块元素 表示一个段落
+-->
+<body>
+    <div class="product">
+        <a href="#">
+            <img src="./images/Kettle.png" alt="水壶">
+            <p class="describe">快速煮水,安心饮用</p>
+            <div class="product-detail">
+                <div class="text">
+                    <span>直播中</span>
+                    <span>特惠</span>
+                    <span>30天保价</span>
+                    <span>售后免邮</span>
+                </div>
+                <p class="name">云米电水壶</p>
+                <p>￥59</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

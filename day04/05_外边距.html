@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距</title>
+    <style>
+        .box1{
+             height: 100px;
+             width: 100px;
+             background-color: rgb(0, 55, 255);
+
+             /*margin-top: 100px;*/
+             /*margin-left: 100px;*/
+             /*margin-bottom: 100px;*/
+         }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(135, 222, 163);
+
+            /*margin-top: 100px;*/
+            /*margin-left: 100px;*/
+        }
+        .box3{
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 213, 0);
+            padding-top: 10px;
+
+        }
+        .box4{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(222, 135, 165);
+            margin-top: 20px;
+            /*margin-top: 100px;*/
+            /*margin-left: 100px;*/
+        }
+    </style>
+
+</head>
+<!--
+    外边距:四个方向 margin
+        浏览器浏览顺序自左向右 自上向下
+    外边距折叠:垂直方向的相邻外边距会发生折叠
+        -兄弟元素间外边距会取较大值->避免两个元素之间距离过远
+        -父子元素间子元素的外边距会传递给父元素
+-->
+<body>
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

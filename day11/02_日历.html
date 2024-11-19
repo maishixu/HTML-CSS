@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>日历练习</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      margin: 10px;
+      background-color: rgb(72, 84, 108);
+    }
+    .calender{
+      display: flex;
+    }
+    .box{
+      background-color: #aa0000;
+      font-size: 30px;
+      width: 43px;
+      height: 43px;
+      color: white;
+      text-align: center;
+      line-height: 43px;
+      font-weight: 700;
+    }
+    table{
+      width: 40%;
+      border: 1px rgb(232, 232, 232) solid;
+      border-collapse: collapse;
+      table-layout: fixed;
+      background-color: white;
+    }
+    th{
+      height:28px;
+      border: 1px rgb(232, 232, 232) solid;
+      text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    thead th:nth-child(6){
+      color: #c82e2e;
+    }
+    thead th:nth-child(7){
+      color: #c82e2e;
+    }
+    td{
+      position:relative;
+      height: 44px;
+      border: 1px rgb(232, 232, 232) solid;
+      text-align: center;
+      font-weight: 800;
+    }
+    .black-bottom{
+      font-size:12px;
+      text-align: center;
+      font-weight: 15;
+    }
+    .red-bottom{
+      font-weight: 15;
+      color: red;
+      font-size:12px;
+      text-align: center;
+    }
+    .pink{
+      background-color: rgb(253, 238, 241);
+    }
+    .left-top{
+      background-color: #e32e2e;
+      border-radius: 3px;
+      height: 14px;
+      width: 14px;
+      font-size: 11px;
+      color:white;
+      font-weight: 150;
+      position:absolute;
+      top:0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="calender">
+  <div class="box">1</div>
+  <table>
+    <thead>
+      <tr>
+        <th>一</th>
+        <th>二</th>
+        <th>三</th>
+        <th>四</th>
+        <th>五</th>
+        <th>六</th>
+        <th>日</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="pink">1
+          <div class="red-bottom">元旦</div>
+          <div class="left-top">休</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="pink">2
+          <div class="black-bottom">初五</div>
+          <div class="left-top">休</div>
+        </td>
+        <td>3
+          <div class="black-bottom">初六</div>
+        </td>
+        <td>4
+          <div class="black-bottom">初七</div>
+        </td>
+        <td>5
+          <div class="red-bottom">腊八节</div></td>
+        <td>6
+          <div class="black-bottom">初九</div>
+        </td>
+        <td>7
+          <div class="black-bottom">初十</div>
+        </td>
+        <td>8
+          <div class="black-bottom">十一</div>
+        </td>
+      </tr>
+      <tr>
+        <td>9
+          <div class="black-bottom">十二</div>
+        </td>
+        <td>10
+          <div class="black-bottom">十三</div>
+        </td>
+        <td>11
+          <div class="black-bottom">十四</div>
+        </td>
+        <td>12
+          <div class="black-bottom">十五</div>
+        </td>
+        <td>13
+          <div class="black-bottom">十六</div>
+        </td>
+        <td>14
+          <div class="black-bottom">十七</div>
+        </td>
+        <td>15
+          <div class="black-bottom">十八</div>
+        </td>
+      </tr>
+      <tr>
+        <td>16
+          <div class="black-bottom">十九</div>
+        </td>
+        <td>17
+          <div class="black-bottom">二十</div>
+        </td>
+        <td>18
+          <div class="black-bottom">甘一</div>
+        </td>
+        <td>19
+          <div class="black-bottom">甘二</div>
+        </td>
+        <td>20
+          <div class="red-bottom">小年</div>
+        </td>
+        <td>21
+          <div class="black-bottom">甘四</div>
+        </td>
+        <td>22
+          <div class="black-bottom">甘五</div>
+        </td>
+      </tr>
+      <tr>
+        <td>23
+          <div class="black-bottom">甘六</div>
+        </td>
+        <td>24
+          <div class="black-bottom">甘七</div>
+        </td>
+        <td>25
+          <div class="black-bottom">甘八</div>
+        </td>
+        <td>26
+          <div class="black-bottom">甘九</div>
+        </td>
+        <td class="pink">27
+          <div class="red-bottom">除夕</div>
+          <div class="left-top">休</div>
+        </td>
+        <td class="pink">28
+          <div class="red-bottom">春节</div>
+          <div class="left-top">休</div>
+        </td>
+        <td class="pink">29
+          <div class="black-bottom">初二</div>
+          <div class="left-top">休</div>
+        </td>
+      </tr>
+    <tr>
+      <td class="pink">30
+        <div class="black-bottom">初三</div>
+        <div class="left-top">休</div></td>
+      <td class="pink">31
+        <div class="black-bottom">初四</div>
+        <div class="left-top">休</div></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直水平定位</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 300px;
+            border:red 10px solid;
+            position: relative;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #00c4ff;
+            margin:auto;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            position:absolute;
+        }
+    </style>
+</head>
+<!--
+    开启绝对定位后：
+    left+margin-left+可见框的宽度+margin-right+right=包含块的内容区宽度
+    top+margin-top+可见框的宽度+margin-bottom+bottom=包含块的内容区宽度
+    ---倾向于使元素的位置保持不变
+
+-->
+<body>
+<div class="box1">
+    <div class="box2"></div>
+</div>
+</body>
+</html>

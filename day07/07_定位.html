@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+      .box1{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        /*position:absolute;*/
+        /*top:100px;*/
+      }
+      .box2{
+        height: 100px;
+        width: 100px;
+        background-color: #00bbff;
+        /*position:absolute;*/
+          /*top: 50px;*/
+          /*left: 50px;*/
+      }
+      .box3{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position:absolute;
+        left:0;
+        top:0;
+      }
+    </style>
+</head>
+<!--
+  布局手段
+    横向 浮动
+    竖向 盒子模型
+  定位（position）：
+    -开启后元素不会脱离文档流
+    -不设置偏移量不会发生任何变化
+    将元素摆放到任意位置
+    可选值：
+      1.static 默认值 没有开启定位
+      2.relative 开启相对相对定位->会提高元素的层级 盖住别的元素 不会影响其他元素的位置
+      3.absolute 绝对定位 ·开启后会脱离文档流 ·参照于离他最近开启了定位的祖先元素来定位
+                                         ·若祖先元素没有开启定位 则参照物为浏览器窗口；初始包含块 视口 可视窗口
+                 绝对定位会提升元素的层级
+      4.fixed 固定定位
+      5.sticky 粘滞定位
+    偏移量:（通常用两个定位即可确定一个元素的的位置）
+      top:元素上边距离定位位置上边的距离
+      left:元素左边距离定位位置左边的距离
+      bottom:元素下边距离定位位置下边的距离
+      right:元素右边距离定位位置右边的距离
+-->
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>

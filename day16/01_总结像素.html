@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+        height: 100px;
+        width: 900px;  
+        background-color: rgb(69, 218, 69);
+        }
+    </style>
+</head>
+<!-- 
+    总结为一句话：写移动端前要加上
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    CSS像素：程序员像素
+    物理像素：屏幕分辨率
+
+    网页呈现时：CSS像素->物理像素
+    默认情况：
+        视口宽度 1260px（CSS像素）：1260（物理像素）=1：1
+    放大两倍
+        视口宽度 630px（CSS像素）：1280（物理像素）=1：2
+    ———————————————————————————————————————————————————————————————————————
+    移动端
+    像素（物理）越小，越清晰
+    默认移动端视口大小：980px（CSS像素）
+
+    so...PC端的网页都将视口设置为980px以保证在移动端都能看全
+    but..浏览效果不好
+    因此，大部分网站都会分别设置PC端和移动端
+
+    默认情况移动端的像素比 eg. 980：760 一个CSS像素用不到一个物理像素来呈现
+    效果很差
+    调节一个合理的像素比
+    方法调整视口（完美视口）大小 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+<body>
+    <div class="box1"></div>
+</body>
+</html>

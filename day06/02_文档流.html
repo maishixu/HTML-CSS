@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>文档流</title>
+    <style>
+        .box1{
+            height: 100px;
+            /*width: 100px;*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<!--
+    normal flow -是网页的最底层
+      -文档流是网页中的位置,创建的元素都存在文档流中(有些操作会使元素离开文档流)
+      -文档流中的元素要遵守文档流中的规则在页面中排版
+        `块元素:自上向下垂直排列/独占一行/默认宽度会将父元素:包含块 撑满(auto)/不设置高度,高度由内容决定,被内容撑开
+        `行内元素:自左向右水平排列,若一行容纳不下,则另起一行/span的默认高度和宽度都是被内容撑开
+-->
+<body>
+<div class="box1"></div>
+<div class="box1"></div>
+<div class="box1"></div>
+<span>人生海海，我们终将逝去。或许我们一生都在追逐的风景，</span>
+<span>人生海海，我们终将逝去。或许我们一生都在追逐的风景，</span>
+<span>人生海海，我们终将逝去。或许我们一生都在追逐的风景，</span>
+<span>人生海海，我们终将逝去。或许我们一生都在追逐的风景，</span>
+</body>
+</html>

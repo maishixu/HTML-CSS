@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>平移</title>
+  <style>
+    body{
+      perspective: 800px;
+    /*  设置透视效果 perspective 人眼和屏幕的距离*/
+    }
+    .box1{
+      width: 100px;
+      height: 100px;
+      background-color: #87ded7;
+      margin: 200px auto;
+    /*  translateZ 视觉远近的变化*/
+      transition: transform 2s;
+    }
+    .box1:hover{
+      transform: translateZ(300px) ;
+    }
+
+  </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

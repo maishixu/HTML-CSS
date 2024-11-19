@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子：水平布局的等式</title>
+    <style>
+      .box1{
+        box-sizing: border-box;
+        width: 300px;
+        height: 300px;
+        border:red 5px solid;
+      }
+      .box2{
+        width: 100px;
+        height: 100px;
+        background-color: #87dea3;
+        margin: 0 auto;
+        /*margin-left: auto;*/
+        /*margin-right: 100px;*/
+      }
+    </style>
+</head>
+<!--
+  子元素在父元素的内容区中排列
+  在文档流中满足下列等式:
+  包含块内容区的宽度:子元素可见框宽度+子元素的水平外边距
+  没有设置auto时，不满足时浏览器会自动调整右外边距
+  设置auto时,会自动调整auto的大小使等式满足
+
+  总之有auto调auto 无auto调右边距
+
+  文档流中块元素的垂直排列，不需要遵循等式
+-->
+<body>
+<div class="box1">
+  <div class="box2"></div>
+</div>
+</body>
+</html>

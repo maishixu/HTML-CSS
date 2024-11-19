@@ -1,0 +1,433 @@
+.search-line{
+    display: flex;
+    box-sizing: border-box;
+    background-color:rgb(0, 0, 0);
+    height: 36px;
+    width: 1259px;
+    color:rgba(255,255,255,0.6);
+    font-size: 12px;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 36px;
+    border-top-left-radius:7px ;
+    margin-left: 1px;
+    padding: 0 15px;
+}
+.search-line .search-left ul{
+    display: flex;
+}
+.search-line .search-left ul li{
+    padding-right:8px;
+    padding-left: 8px;
+    position: relative;
+}
+.search-line .search-left li .sep{
+    color: #414141;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    right:0;
+}
+.search-line .search-left li .more{
+    z-index: 9999;
+    color: #414141;
+    display: none;
+    height: 0;
+    width: 100px;
+    position: absolute;
+    top:36px;
+    right: -9px;;
+    background-color: white;
+    /* border:1px solid red; */
+}
+.search-line .search-left li .more a{
+    display: block;    
+}
+.search-line .search-right ul{
+    display: flex;
+    justify-content: space-around;
+}
+.search-line .search-right ul li{
+    padding:0 8px;
+    position: relative;
+}
+.search-line .search-right ul li span{
+    color: #414141;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    position: absolute;
+    right:0;
+}
+.search-line .search-right ul .cart{
+    text-align: center;
+    padding-left: 6px;
+    padding-right:2px;
+    background-color: #424242;
+}
+
+.search-line .search-right ul .cart .bottom-cart{
+    z-index:999;
+    display:none;
+    position:absolute;
+    width: 440px;
+    height: 200px;
+    background:white url(../images/cart-big.svg);
+    top:36px;
+    right:0;
+    background-repeat: no-repeat;
+    background-position:center -28px;
+    background-size: 100px 200px;
+    color:rgb(164, 164, 164);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+.search-line .search-right ul .cart .bottom-cart .bottom-cart-add{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    top:127px;
+    margin: 0 auto ;
+}
+.search-line .search-right ul .phone-detail{
+    z-index: 9999;
+    display: none;
+    position: absolute;
+    height: 120px;
+    width: 244px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid black; */
+    cursor: pointer;
+    right:0px;
+}
+.search-line .search-right ul .phone-detail-list{
+    display: flex;
+    position: absolute;
+    /* border: rgb(96, 60, 60) solid 1px; */
+    width: 244px;
+    height: 120px;
+}
+.search-line .search-right ul .phone-detail img{
+    position: absolute;
+    margin: auto 0;
+    left:2px;
+    top:0;
+    bottom: 0;
+    width: 90px;
+    height: 90px;
+}
+.search-line .search-right ul .phone-detail .text{
+    height: 50px;
+    position: absolute;
+    color: black;
+    top:6px;
+    left:100px;
+}
+.search-line .search-right ul .phone-detail .text2{
+    position: absolute;
+    color:#777777;
+    top:22px;
+    left:2px;
+}
+.search-line .search-right ul .phone-detail a{
+    position: absolute;
+    left:2px;
+    top:40px;
+    text-decoration:underline;
+    color: red;
+}
+.search-line .search-right ul .phone-detail .icon{
+    color: #777777;
+    font-size: 18px;
+    position: absolute;
+    top:73px;
+    left:98px;
+}
+.search-line .search-right ul .phone-detail .icon i{
+    padding-left: 7px;
+}
+.search-line .search-right ul .phone-detail .icon-exp{
+    color: #414141;
+    justify-content: space-evenly;
+    font-size: 10px;
+    position:absolute;
+    display: flex;
+    top:90px;
+    left:94px;
+}
+.search-line .search-right ul .phone-detail .icon-exp div{
+    padding-left: 2px;
+}
+.search-line .search-left ul li .white:hover{
+    color:rgb(255, 255, 255);
+}
+.search-line .search-left ul li:last-child:hover{
+    color: red;
+    background-color: white;
+}
+.search-line .search-left ul li:last-child:hover .more{
+    height: 100px;
+    display: block;
+}
+.search-line .search-left ul li .more a:hover{
+    color:red ;
+}
+.search-line .search-left ul li:last-child:hover i{
+    transform: rotate(180deg);
+}
+.search-line .search-right ul .white:hover{
+    color: white;
+}
+.search-line .search-right ul .red:hover{
+    color: red;
+    background-color: white;
+}
+.search-line .search-right ul .red2:hover .phone-detail{
+    display: block;
+}
+.search-line .search-right ul .red:hover .ro{
+    transform: rotate(180deg);
+}
+.search-line .search-right ul .cart:hover{
+    color: red;
+    background-color: white;
+}
+.search-line .search-right ul .cart:hover .bottom-cart{
+    display: block;
+}
+/* ------header-------- */
+.header{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    height: 74px;
+    width: 1260px;
+    padding-right: 23px;
+    padding-left: 25px;
+    /* background-color: aqua; */
+}
+.header .logo{
+    width: 110px;
+    height: 74px;
+    cursor: pointer;
+    background: url(https://res.vmallres.com/portal/1.24.7.301/h5/images/logo_app.png);
+    background-size: 90px 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header .class{
+    padding-left: 60px;
+    width: 1100px;
+    height: 74px;
+    /* background-color: skyblue; */
+}
+.header .class ul{
+    display: flex;
+    text-align: center;
+    line-height: 74px;
+    color: black;
+    font-size: 15px;
+}
+.header .class ul li{
+    padding-right: 30px;
+}
+.header .class ul li a:hover{
+    color: red;
+}
+.header .loupe{
+    width: 60px;
+    height: 74px;
+    text-align:right;
+    line-height: 74px;
+    font-size: 22px;
+    
+}
+.header .loupe i{
+    cursor: pointer;
+    opacity: .5;
+}
+.header .loupe .search-input{
+    display: none;
+    position:absolute;
+    height:33px;
+    width: 600px;
+    border: 1px solid #424242;
+    font-size: 15px;
+    border-radius: 12px;
+    opacity:.5;
+    padding-left: 10px;
+    left:0;
+    right: 10px;
+    top:0;
+    bottom: 0;
+    margin: auto 600px;
+    transition: opacity 0.3s ease;
+}
+.header .loupe i:hover{
+    opacity: .9;
+}
+.header .loupe i:hover + .search-input{
+    display: block;
+    opacity: .8; /* 鼠标悬停时提高不透明度 */
+}
+.header .loupe i:hover~.class{
+    display: none;
+}
+.header .loupe i:hover~.logo{
+    display: none;
+}
+/* -----左侧分类------ */
+.backgroud{
+    position: relative;
+    height: 550px;
+    width: 1260px;
+    background-color: aquamarine;
+    padding-top: 25px;
+    background-image:url(https://res.vmallres.com/uomcdn/CN/cms/202409/388dc14827ef4472935e2dd53efd7e36.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroud .category{
+    /* box-sizing: border-box; */
+    position: relative;
+    margin-left: 30px;
+    height: 496px;
+    width: 200px;
+    padding:8px 0;
+    /* background-color: burlywood; */
+    font-size: 14px;
+    background-color: white;
+    
+    box-shadow:1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.category .outer .first-li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    height: 40px;
+    /* background-color: aquamarine; */
+    line-height: 40px;
+    cursor: pointer;
+    /* opacity: .6; */
+}
+.category ul .first-li i{
+    font-size: 12px;
+    opacity: .6;
+}
+.category ul .first-li a{
+    opacity: .6;
+}
+.category ul .first-li:hover a{
+    opacity: 100%;
+}
+.backgroud .category .first-li .detail{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 438px;
+    height: 496px;
+    background-color: white;
+    opacity: 1;
+    padding: 20px 5px;
+}
+.backgroud .category .first-li .detail ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+.backgroud .category .first-li .detail ul .second-li img{
+    height: 45px;
+    width: 45px;
+}
+.backgroud .category .first-li .detail ul .second-li{
+    /* background-color: orange; */
+    width: 214px;
+    height: 90px;
+    line-height:90px ;
+    text-align:left;
+    padding-left: 30px;
+}
+.category ul .special:hover .detail{
+    display: block;
+}
+.backgroud .category .first-li .detail ul .second-li:hover{
+    color: red;
+}
+/* 导航小点 */
+.backgroud .point{
+    /* background-color: orange; */
+    position: absolute;
+    height: 30px;
+    width: 150px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+}
+.backgroud .point .point-ul{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center;  */
+}
+.backgroud .point .point-ul .point-li{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.backgroud .point .point-ul .active{
+    width: 12px;
+    border-radius: 30%;
+    background-color: white;
+}
+/* 下部可选 */
+.bot-cat{
+    background-color: rgb(241, 243, 245);
+    height: 220px;
+    width: 1260px;
+    padding: 20px 45px;
+}
+.bot-cat .bot-cat-ul{
+    /* background-color: bisque; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.bot-cat .bot-cat-a{
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+    /* background-color: aqua; */
+    text-align: center;
+    height: 90px;
+    width: 195px;
+}
+.bot-cat .bot-cat-a .bot-cat-img{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+.bot-cat .bot-cat-a img{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+.bot-cat .bot-cat-a span{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+}
+.bot-cat-a:hover span{
+        font-size: 15px;
+        font-weight: bold;
+}
+.bot-cat-a:hover img{
+    width: 55px;
+    height: 55px;
+}

@@ -1,0 +1,30 @@
+/*基础样式表*/
+body{
+    /*指定默认字体*/
+    font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color:#333;
+    background-color: transparent;
+    /*主宽度*/
+    min-width: 492px;
+}
+/*链接默认样式*/
+a{
+    text-decoration: none;
+    color:inherit;/*链接的颜色继承父元素*/
+}
+/*主(中间)容器默认样式*/
+.w{
+    width: 1226px;
+    margin:0 auto;
+}
+/*清除浮动和高度塌陷*/
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}

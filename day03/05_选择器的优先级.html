@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器的优先级</title>
+    <style>
+        div{color: red}
+        .box1{color: blue!important;}
+        #box2{color: fuchsia}
+        *{color: brown}
+    </style>
+</head>
+<!--
+    优先级：继承样式<通配选择器0000<元素选择器0001<类选择器0010<0100<内联样式1000
+       -计算选择器时要加一起计算，但累加无法跨越域数量级
+       比如div.box1>box1
+       -优先级一样，则优先显示靠下的样式，若在颜色定义后添加！important，则该样式优先级最高
+-->
+<body>
+    <div class="box1" id="box2" style="color: black">
+        最终生效的颜色
+        <p>继承器没有优先级，故此渲染的颜色是通配选择器</p>
+    </div>
+</body>
+</html>

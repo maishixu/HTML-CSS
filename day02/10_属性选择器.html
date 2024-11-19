@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+  <style>
+    /*根据元素的属性来选中元素
+    [属性值^=属性值] 前“属性值”相同的元素
+    [属性值$=属性值] 后“属性值”相同的元素
+    [属性值*=属性值] 有“属性值”的元素
+    交集选择器 选中同时符合多个选择器的元素
+    div.box选择类为box的div的选择器
+
+    作业_1：https://flukeout.github.io
+    */
+    h1[title^=he]{
+      color: brown;
+    }
+    [title$=bc]{
+      color:aqua;
+    }
+
+  </style>
+</head>
+<body>
+<h1 title="hello">落霞与孤鹜齐飞</h1>
+<p title="abc">秋水共长天一色</p>
+<p title="hell">南村群童欺我老无力</p>
+<div title="hhhbc">先天下之忧而忧</div>
+
+</body>
+</html>

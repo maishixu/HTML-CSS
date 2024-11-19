@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>动画样式</title>
+    <style>
+        @keyframes move {
+            from{
+                margin-left: 0;
+            }
+            50%{
+                margin-left: 100px;
+            }
+            to{
+                margin-left:200px;
+            }
+        }
+        .box{
+            background-color: #ffb83d;
+            height: 100px;
+            width: 100px;
+            animation:move 5s steps(4) infinite;
+        }
+
+    </style>
+</head>
+<!--
+    animation-delay
+        只有第一次执行时延时会生效
+    animation-timing-function
+        每次区间都生效一次
+    animation-direction
+        动画的方向
+    animation-fill-mode
+        填充模式
+        默认值none 延时时动画不变 结束时恢复原状
+        forward  延时时动画不变 结束时保持to状态
+        backwards  延时from状态 结束时恢复状态
+    animation-play-state
+        动画播放时的状态
+-->
+<body>
+<div class="box"></div>
+</body>
+</html>

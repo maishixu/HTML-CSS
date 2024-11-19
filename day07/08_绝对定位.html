@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 300px;
+            border:10px red solid;
+            position: relative;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #00c4ff;
+            margin: 0 auto;
+            position: absolute;
+            left:0;
+            right:0;
+        }
+    </style>
+</head>
+<!--
+    当元素开启绝对定位后->新的等式
+    left+margin-left+可见框+margin-right+right=包含块的内容区宽度
+    （会使元素位置保持不变）要水平居中：left=0 right=0使未知量auto变少
+    top+margin-top+可见框高度+margin-bottom+bottom=包含块内容区的宽度
+-->
+<body>
+<div class="box1">
+    <div class="box2"></div>
+</div>
+</body>
+</html>

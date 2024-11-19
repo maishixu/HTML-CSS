@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+  <style>
+    /*
+  组合选择器
+  关系选择器
+  后代选择器 语法：祖先 后代
+  兄弟选择器 兄+弟：随其后的一个弟
+           兄~弟：兄后的所有弟
+           plate apple后代的所有苹果
+           plate>apple子元素苹果
+   */
+    div>span{
+      color:red;
+    }
+    .box.span{
+      color: #87dea3;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <span>在div中的span</span>
+</div>
+<span>不在div中的span</span>
+<div class="box">
+  <span>类名box为div中的span</span>
+  <p>
+      <span>
+        不是box中的子元素
+      </span>
+</div>
+<h1 >落霞与孤鹜齐飞</h1>
+<p>秋水共长天一色</p>
+<p>南村群童欺我老无力</p>
+<div>先天下之忧而忧</div>
+</body>
+</html>
